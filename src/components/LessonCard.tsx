@@ -9,12 +9,13 @@ interface LessonCardProps {
 
 export const LessonCard: React.FC<LessonCardProps> = ({ lesson, onSelect }) => {
   return (
-    <div 
+    <button
+      type="button"
       onClick={() => onSelect(lesson.id)}
-      className="glass-card p-6 cursor-pointer group flex flex-col justify-between hover:scale-[1.01] transition-all relative overflow-hidden"
+      className="glass-card p-6 cursor-pointer group flex flex-col justify-between text-left relative overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
     >
       {/* Top Accent Stripe */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-red-500 via-amber-500 to-emerald-500 opacity-75 group-hover:opacity-100 transition-opacity" />
+      <div className="absolute top-0 left-0 right-0 h-0.5 bg-amber-500/50 group-hover:bg-amber-500 transition-colors" />
 
       <div>
         {/* Stage & Number */}
@@ -60,6 +61,6 @@ export const LessonCard: React.FC<LessonCardProps> = ({ lesson, onSelect }) => {
           <ChevronRight className="w-4 h-4" />
         </div>
       </div>
-    </div>
+    </button>
   );
 };

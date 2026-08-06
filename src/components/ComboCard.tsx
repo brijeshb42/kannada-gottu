@@ -18,14 +18,14 @@ export const ComboCard: React.FC<ComboCardProps> = ({ combo, index }) => {
   };
 
   return (
-    <div className="glass-card p-5 border border-slate-700/60 hover:border-amber-500/40 transition-all flex flex-col justify-between">
+    <div className="glass-card p-5 flex flex-col justify-between">
       <div className="flex items-start justify-between gap-3 mb-3">
         <div className="flex items-center gap-2">
           <div className="w-7 h-7 rounded-lg bg-amber-500/20 text-amber-300 flex items-center justify-center font-bold text-xs border border-amber-500/30">
             <Layers className="w-3.5 h-3.5" />
           </div>
           <span className="text-xs font-semibold text-amber-300 uppercase tracking-wider">
-            Mix & Match Combo #{index + 1}
+            Combo #{index + 1}
           </span>
         </div>
 
@@ -39,7 +39,7 @@ export const ComboCard: React.FC<ComboCardProps> = ({ combo, index }) => {
       </div>
 
       <div className="space-y-2">
-        <h3 className="text-2xl font-bold text-amber-200 kannada-text tracking-wide">
+        <h3 lang="kn" className="text-2xl font-bold text-amber-200 kannada-text">
           {combo.kannada}
         </h3>
         <p className="text-base font-semibold text-white">{combo.transliteration}</p>

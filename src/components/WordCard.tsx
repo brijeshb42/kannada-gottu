@@ -18,43 +18,42 @@ export const WordCard: React.FC<WordCardProps> = ({ word, index }) => {
   };
 
   return (
-    <div className="glass-card p-6 relative overflow-hidden group border border-slate-700/60 hover:border-red-500/40 transition-all">
-      {/* Corner Badge */}
-      <div className="absolute top-4 right-4 flex items-center gap-2">
-        <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-800 text-slate-300 border border-slate-700">
+    <div className="glass-card p-6 flex flex-col gap-4">
+      {/* Word number + pronunciation control share the top row */}
+      <div className="flex items-center justify-between gap-3">
+        <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 border border-slate-700">
           Word #{index + 1}
         </span>
+
+        <button
+          onClick={handleAudio}
+          title="Listen to pronunciation"
+          aria-label={`Listen to ${word.transliteration}`}
+          className={`w-11 h-11 rounded-full flex items-center justify-center transition-colors ${
+            isPlaying
+              ? 'bg-amber-500 text-slate-900'
+              : 'bg-slate-800 text-amber-400 hover:bg-amber-500 hover:text-slate-900 border border-slate-700'
+          }`}
+        >
+          <Volume2 className={`w-5 h-5 ${isPlaying ? 'animate-pulse' : ''}`} />
+        </button>
       </div>
 
       {/* Main Content */}
       <div className="flex flex-col gap-4">
         {/* Kannada Script & Pronunciation */}
-        <div className="flex items-start justify-between gap-4 pr-12">
-          <div>
-            <h2 className="text-4xl font-extrabold text-amber-300 kannada-text tracking-wide mb-1">
-              {word.kannada}
-            </h2>
-            <div className="flex items-center gap-2">
-              <span className="text-xl font-bold text-white tracking-wide">
-                {word.transliteration}
-              </span>
-              <span className="text-xs px-2 py-0.5 rounded bg-slate-800 text-amber-400 font-mono border border-slate-700">
-                /{word.phonetic}/
-              </span>
-            </div>
+        <div>
+          <h2 lang="kn" className="text-4xl font-extrabold text-amber-300 kannada-text mb-1">
+            {word.kannada}
+          </h2>
+          <div className="flex flex-wrap items-baseline gap-2">
+            <span className="text-xl font-bold text-white tracking-wide">
+              {word.transliteration}
+            </span>
+            <span className="text-xs px-2 py-0.5 rounded bg-slate-800 text-amber-400 font-mono border border-slate-700">
+              /{word.phonetic}/
+            </span>
           </div>
-
-          <button
-            onClick={handleAudio}
-            title="Listen to pronunciation"
-            className={`w-12 h-12 rounded-full flex items-center justify-center transition-all shadow-md ${
-              isPlaying
-                ? 'bg-amber-500 text-slate-900 scale-110'
-                : 'bg-slate-800 text-amber-400 hover:bg-amber-500 hover:text-slate-900 border border-slate-700'
-            }`}
-          >
-            <Volume2 className={`w-5 h-5 ${isPlaying ? 'animate-bounce' : ''}`} />
-          </button>
         </div>
 
         {/* English Meaning */}

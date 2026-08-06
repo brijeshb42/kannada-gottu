@@ -1,0 +1,89 @@
+{
+  "id": "lesson-4",
+  "number": 4,
+  "title": "Polite Stops & Small Requests",
+  "stage": "Stage 2: Two-Word Combinations",
+  "topic": "Auto Rides, Portions & Requests",
+  "intro": "Children learn to control their immediate world by asking adults to stop, give, or offer just a little. Today we add 3 practical Bengaluru sounds for auto rides, shops, and meals, then mix them with earlier lessons.",
+  "words": [
+    {
+      "id": "nillisi",
+      "kannada": "ನಿಲ್ಲಿಸಿ",
+      "transliteration": "Nillisi",
+      "phonetic": "Nil-lee-see",
+      "english": "Stop (Polite / Respectful)",
+      "babyAnalogy": "Holding up a flat palm to make movement stop.",
+      "actionTag": "When your auto reaches the right spot, point nearby and say 'Illi nillisi' (Stop here)."
+    },
+    {
+      "id": "kodi",
+      "kannada": "ಕೊಡಿ",
+      "transliteration": "Kodi",
+      "phonetic": "Koh-dee",
+      "english": "Give (Polite / Respectful)",
+      "babyAnalogy": "Opening both hands toward an adult to receive something.",
+      "actionTag": "At a shop or food counter, point to what you want and say 'Kodi' politely."
+    },
+    {
+      "id": "swalpa",
+      "kannada": "ಸ್ವಲ್ಪ",
+      "transliteration": "Swalpa",
+      "phonetic": "Swul-pah",
+      "english": "A little / A small amount",
+      "babyAnalogy": "Holding thumb and finger close together to show a tiny amount.",
+      "actionTag": "When someone serves food, pinch your fingers together and say 'Swalpa' for a small portion."
+    }
+  ],
+  "combos": [
+    {
+      "kannada": "ಇಲ್ಲಿ ನಿಲ್ಲಿಸಿ",
+      "transliteration": "Illi nillisi",
+      "meaning": "Stop here, please.",
+      "context": "Combining Illi (Lesson 3) + Nillisi (Lesson 4) for an auto ride."
+    },
+    {
+      "kannada": "ಸ್ವಲ್ಪ ಕೊಡಿ",
+      "transliteration": "Swalpa kodi",
+      "meaning": "Give me a little, please.",
+      "context": "Combining Swalpa + Kodi from Lesson 4 while asking for a small portion."
+    },
+    {
+      "kannada": "ಸ್ವಲ್ಪ ಬೇಕು",
+      "transliteration": "Swalpa beku",
+      "meaning": "I want a little.",
+      "context": "Combining Swalpa (Lesson 4) + Beku (Lesson 2)."
+    },
+    {
+      "kannada": "ಹೌದು, ಸ್ವಲ್ಪ ಕೊಡಿ",
+      "transliteration": "Haudu, swalpa kodi",
+      "meaning": "Yes, give me a little, please.",
+      "context": "Combining Haudu (Lesson 1) + Swalpa Kodi (Lesson 4)."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q4-1",
+      "scenario": "Your auto has reached the gate where you want to get down.",
+      "question": "What do you say while pointing to this spot?",
+      "options": ["Illi nillisi", "Alli hogi", "Swalpa beku"],
+      "answer": "Illi nillisi",
+      "explanation": "Illi (Here, Lesson 3) + Nillisi (Stop politely) = Stop here, please."
+    },
+    {
+      "id": "q4-2",
+      "scenario": "A server is spooning chutney onto your plate, and you only want a small amount.",
+      "question": "How do you politely ask for a little?",
+      "options": ["Swalpa kodi", "Illi nillisi", "Illa, beda"],
+      "answer": "Swalpa kodi",
+      "explanation": "Swalpa (A little) + Kodi (Give politely) = Give me a little, please."
+    },
+    {
+      "id": "q4-3",
+      "scenario": "Your colleague offers you some homemade snack. You want to accept, but only a little.",
+      "question": "What complete phrase do you use?",
+      "options": ["Haudu, swalpa kodi", "Beda, alli hogi", "Namaskara, illi banni"],
+      "answer": "Haudu, swalpa kodi",
+      "explanation": "Haudu (Yes, Lesson 1) + Swalpa (A little) + Kodi (Give politely) = Yes, give me a little, please."
+    }
+  ]
+}

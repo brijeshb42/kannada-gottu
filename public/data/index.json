@@ -35,6 +35,17 @@
       "wordCount": 4,
       "words": ["Banni", "Hogi", "Illi", "Alli"],
       "createdDate": "2026-08-06"
+    },
+    {
+      "id": "lesson-4",
+      "number": 4,
+      "title": "Polite Stops & Small Requests",
+      "stage": "Stage 2: Two-Word Combinations",
+      "topic": "Auto Rides, Portions & Requests",
+      "description": "Ask an auto to stop, request something politely, and specify a small amount while reviewing earlier words.",
+      "wordCount": 3,
+      "words": ["Nillisi", "Kodi", "Swalpa"],
+      "createdDate": "2026-08-06"
     }
   ]
 }

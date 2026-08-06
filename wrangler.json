@@ -1,6 +1,15 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "kannada-gottu",
-  "pages_build_output_dir": "./dist",
-  "compatibility_date": "2026-08-01"
+  "compatibility_date": "2026-08-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "none"
+  },
+  "routes": [
+    {
+      "pattern": "kn.brijesh.cc",
+      "custom_domain": true
+    }
+  ]
 }

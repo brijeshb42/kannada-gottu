@@ -8,7 +8,7 @@ Live at **[kn.brijesh.cc](https://kn.brijesh.cc)**.
 
 ## Stack
 
-Vite 8 · React 19 · TypeScript · Tailwind CSS 4 · lucide-react · Cloudflare Pages
+Vite 8 · React 19 · TypeScript · Tailwind CSS 4 · lucide-react · Cloudflare Workers
 
 ## Local development
 
@@ -51,11 +51,20 @@ a flashcard deck, and reshuffles on each pass.
 
 ## Deployment
 
-`.github/workflows/deploy.yml` builds and deploys to Cloudflare Pages on push to
-`main`, or on demand via **Actions → Deploy to Cloudflare Pages → Run workflow**.
+Deployed as a **Cloudflare Worker serving static assets** — `dist/` is uploaded
+as the Worker's asset bundle, and there is no Worker script (`wrangler.json` has
+no `main`; requests are served straight from the asset store).
+
+`.github/workflows/deploy.yml` runs `wrangler deploy` on push to `main`, or on
+demand via **Actions → Deploy to Cloudflare Workers → Run workflow**. The Worker
+and the `kn.brijesh.cc` custom domain are both created on the first deploy —
+nothing needs provisioning in the dashboard first.
 
 Required repository secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`.
+The token needs Workers *and* zone permissions — the **"Edit Cloudflare
+Workers"** token template covers it. A Pages-scoped token will not work.
 
-The `kn.brijesh.cc` custom domain is attached to the Pages project in the
-Cloudflare dashboard (Pages → kannada-gottu → Custom domains) — Wrangler does
-not manage it.
+`not_found_handling` is deliberately `"none"`: the app has no client-side
+router, and SPA mode would answer a missing `lesson-<N>.json` with `index.html`
+and a `200`, so `src/services/data.ts` would try to parse HTML instead of
+surfacing its "Failed to load lesson" error.

@@ -1,4 +1,4 @@
-name: Deploy to Cloudflare Pages
+name: Deploy to Cloudflare Workers
 
 on:
   push:
@@ -38,9 +38,11 @@ jobs:
       - name: Build site
         run: pnpm build
 
-      - name: Deploy to Cloudflare Pages
+      # `wrangler deploy` uploads dist/ as the Worker's static assets and
+      # creates the Worker on first run, so nothing needs pre-provisioning.
+      - name: Deploy Worker
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=kannada-gottu
+          command: deploy

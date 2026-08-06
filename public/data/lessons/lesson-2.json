@@ -1,0 +1,89 @@
+{
+  "id": "lesson-2",
+  "number": 2,
+  "title": "Expressing Wants & Prices",
+  "stage": "Stage 1: Sound & Signal Association",
+  "topic": "Desires & Transactions",
+  "intro": "Once toddlers master basic signals (Hello, Yes, No), their next big milestone is expressing desires and asking for things. Today we add 3 fundamental desire/transaction words and mix them with Lesson 1.",
+  "words": [
+    {
+      "id": "beku",
+      "kannada": "ಬೇಕು",
+      "transliteration": "Beku",
+      "phonetic": "Bay-koo",
+      "english": "Want / Need",
+      "babyAnalogy": "Reaching out hands towards something they want.",
+      "actionTag": "Put any noun before it: 'Coffee beku' (I want coffee), 'Water beku'."
+    },
+    {
+      "id": "beda",
+      "kannada": "ಬೇಡ",
+      "transliteration": "Beda",
+      "phonetic": "Bay-dah",
+      "english": "Don't want / No thanks",
+      "babyAnalogy": "Pushing a toy or plate away gently.",
+      "actionTag": "Say 'Auto beda' (Don't want auto) or 'Sugar beda' (No sugar)."
+    },
+    {
+      "id": "eshtu",
+      "kannada": "ಎಷ್ಟು?",
+      "transliteration": "Eshtu?",
+      "phonetic": "Esh-too?",
+      "english": "How much? / What price?",
+      "babyAnalogy": "Pointing inquisitively at something in a shop window.",
+      "actionTag": "Point at any fruit, vegetable, or item and ask 'Eshtu?'."
+    }
+  ],
+  "combos": [
+    {
+      "kannada": "ಕಾಫಿ ಬೇಕು",
+      "transliteration": "Coffee beku",
+      "meaning": "I want coffee!",
+      "context": "Ordering coffee at a Darshini or cafe."
+    },
+    {
+      "kannada": "ಆಟೋ ಬೇಡ",
+      "transliteration": "Auto beda",
+      "meaning": "Don't want auto / No auto needed",
+      "context": "Politely declining auto drivers."
+    },
+    {
+      "kannada": "ಇಲ್ಲ, ಬೇಡ!",
+      "transliteration": "Illa, beda!",
+      "meaning": "No, I don't want it!",
+      "context": "Combining Illa (Lesson 1) + Beda (Lesson 2) for strong polite refusal."
+    },
+    {
+      "kannada": "ಹೌದು, ಬೇಕು!",
+      "transliteration": "Haudu, beku!",
+      "meaning": "Yes, I want that!",
+      "context": "Combining Haudu (Lesson 1) + Beku (Lesson 2) for enthusiastic agreement."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q2-1",
+      "scenario": "You're buying tender coconut (elaneeru) at a roadside stall.",
+      "question": "How do you ask 'How much?'",
+      "options": ["Eshtu?", "Beku", "Beda"],
+      "answer": "Eshtu?",
+      "explanation": "Eshtu? (ಎಷ್ಟು?) means 'How much?'."
+    },
+    {
+      "id": "q2-2",
+      "scenario": "Someone tries to sell you an item you don't want.",
+      "question": "How do you say 'No, don't want!' (2-word combo)?",
+      "options": ["Illa, beda", "Haudu, beku", "Namaskara, eshtu"],
+      "answer": "Illa, beda",
+      "explanation": "Illa (No) + Beda (Don't want) forms 'Illa, beda'."
+    },
+    {
+      "id": "q2-3",
+      "scenario": "Your colleague asks if you want filter coffee, and you really do!",
+      "question": "How do you say 'Yes, want!'?",
+      "options": ["Haudu, beku", "Illa, beda", "Namaskara, haudu"],
+      "answer": "Haudu, beku",
+      "explanation": "Haudu (Yes) + Beku (Want) forms 'Haudu, beku'."
+    }
+  ]
+}

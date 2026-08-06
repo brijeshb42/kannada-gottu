@@ -1,0 +1,83 @@
+{
+  "id": "lesson-1",
+  "number": 1,
+  "title": "First Sounds & Signals",
+  "stage": "Stage 1: Sound & Signal Association",
+  "topic": "Survival Greetings & Direct Responses",
+  "intro": "Babies don't start language learning with grammar rules or text books — they learn by associating sounds directly with intent, feelings, and physical gestures. Today we anchor your first 3 core Kannada sounds.",
+  "words": [
+    {
+      "id": "namaskara",
+      "kannada": "ನಮಸ್ಕಾರ",
+      "transliteration": "Namaskara",
+      "phonetic": "Nah-mas-kah-rah",
+      "english": "Hello / Respectful greeting",
+      "babyAnalogy": "The universal first smile and wave when acknowledging someone.",
+      "actionTag": "Say 'Namaskara' to your security guard, vendor, or colleague today instead of 'Hi'."
+    },
+    {
+      "id": "haudu",
+      "kannada": "ಹೌದು",
+      "transliteration": "Haudu",
+      "phonetic": "How-doo",
+      "english": "Yes (Agreement)",
+      "babyAnalogy": "The enthusiastic head nod when accepting food or agreeing.",
+      "actionTag": "Nod and say 'Haudu' whenever you mean 'Yes' today."
+    },
+    {
+      "id": "illa",
+      "kannada": "ಇಲ್ಲ",
+      "transliteration": "Illa",
+      "phonetic": "Eel-lah",
+      "english": "No / Don't have / Not there",
+      "babyAnalogy": "The head shake when refusing food or pointing to an empty bowl.",
+      "actionTag": "Say 'Illa' when an auto driver offers a ride you don't need or when something is unavailable."
+    }
+  ],
+  "combos": [
+    {
+      "kannada": "ನಮಸ್ಕಾರ!",
+      "transliteration": "Namaskara!",
+      "meaning": "Hello / Greetings!",
+      "context": "Ideal morning greeting to start any interaction."
+    },
+    {
+      "kannada": "ಹೌದು!",
+      "transliteration": "Haudu!",
+      "meaning": "Yes, exactly!",
+      "context": "Positive confirmation in any conversation."
+    },
+    {
+      "kannada": "ಇಲ್ಲ!",
+      "transliteration": "Illa!",
+      "meaning": "No / Not available!",
+      "context": "Direct polite refusal or stating absence."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1-1",
+      "scenario": "You bump into your landlord or neighbor in the hallway.",
+      "question": "What is the respectful sound to greet them?",
+      "options": ["Namaskara", "Illa", "Haudu"],
+      "answer": "Namaskara",
+      "explanation": "Namaskara (ನಮಸ್ಕಾರ) is the respectful universal greeting in Kannada."
+    },
+    {
+      "id": "q1-2",
+      "scenario": "A tea vendor asks if you enjoyed your filter coffee, and you did!",
+      "question": "What do you say with a nod?",
+      "options": ["Illa", "Haudu", "Namaskara"],
+      "answer": "Haudu",
+      "explanation": "Haudu (ಹೌದು) means 'Yes' / Agreement."
+    },
+    {
+      "id": "q1-3",
+      "scenario": "An auto driver offers you a ride, but your destination is right next door.",
+      "question": "What do you say with a gentle hand gesture?",
+      "options": ["Haudu", "Namaskara", "Illa"],
+      "answer": "Illa",
+      "explanation": "Illa (ಇಲ್ಲ) means 'No' / 'Don't need' / 'Not there'."
+    }
+  ]
+}

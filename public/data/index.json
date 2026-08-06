@@ -1,0 +1,40 @@
+{
+  "title": "Kannada Gottu — Natural Immersion for Beginners",
+  "subtitle": "Learn Kannada like a child through sound-intent association, spaced repetition, and real-world micro-challenges.",
+  "quietHours": "10:00 PM to 8:00 AM IST",
+  "lessons": [
+    {
+      "id": "lesson-1",
+      "number": 1,
+      "title": "First Sounds & Signals",
+      "stage": "Stage 1: Sound & Signal Association",
+      "topic": "Survival Greetings & Direct Responses",
+      "description": "Master the 3 foundational sounds every baby learns first: Greetings, Agreement, and Refusal.",
+      "wordCount": 3,
+      "words": ["Namaskara", "Haudu", "Illa"],
+      "createdDate": "2026-08-04"
+    },
+    {
+      "id": "lesson-2",
+      "number": 2,
+      "title": "Expressing Wants & Prices",
+      "stage": "Stage 1: Sound & Signal Association",
+      "topic": "Desires & Transactions",
+      "description": "Express wants, refusal of offers, and ask prices while building your first two-word combinations.",
+      "wordCount": 3,
+      "words": ["Beku", "Beda", "Eshtu?"],
+      "createdDate": "2026-08-05"
+    },
+    {
+      "id": "lesson-3",
+      "number": 3,
+      "title": "Movement & Directions",
+      "stage": "Stage 2: Two-Word Combinations",
+      "topic": "Actions & Locations",
+      "description": "Direct movement and location (Come, Go, Here, There) combined with your daily desire words.",
+      "wordCount": 4,
+      "words": ["Banni", "Hogi", "Illi", "Alli"],
+      "createdDate": "2026-08-06"
+    }
+  ]
+}

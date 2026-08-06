@@ -1,0 +1,89 @@
+{
+  "id": "lesson-3",
+  "number": 3,
+  "title": "Movement & Directions",
+  "stage": "Stage 2: Two-Word Combinations",
+  "topic": "Actions & Locations",
+  "intro": "As toddlers gain mobility, their language naturally shifts to movement and pointing out locations. Today we add 3 fundamental movement/location words and mix them with Days 1 & 2.",
+  "words": [
+    {
+      "id": "banni",
+      "kannada": "ಬನ್ನಿ",
+      "transliteration": "Banni",
+      "phonetic": "Bun-nee",
+      "english": "Come (Polite / Respectful)",
+      "babyAnalogy": "Beckoning gesture with hands to call someone over.",
+      "actionTag": "Calling domestic help, colleague, or friend: 'Illi banni!' (Come here!)."
+    },
+    {
+      "id": "hogi",
+      "kannada": "ಹೋಗಿ",
+      "transliteration": "Hogi",
+      "phonetic": "Hoh-gee",
+      "english": "Go (Polite / Respectful)",
+      "babyAnalogy": "Waving bye-bye or pointing towards an exit.",
+      "actionTag": "Say 'Alli hogi' (Go there) or 'Hogi banni' (Go and come back / Goodbye)."
+    },
+    {
+      "id": "illi-alli",
+      "kannada": "ಇಲ್ಲಿ / ಅಲ್ಲಿ",
+      "transliteration": "Illi / Alli",
+      "phonetic": "Eel-lee / Ul-lee",
+      "english": "Here (Illi) / There (Alli)",
+      "babyAnalogy": "Pointing right next to oneself vs pointing far away.",
+      "actionTag": "Point near and say 'Illi', point far and say 'Alli'."
+    }
+  ],
+  "combos": [
+    {
+      "kannada": "ಇಲ್ಲಿ ಬನ್ನಿ",
+      "transliteration": "Illi banni",
+      "meaning": "Come here!",
+      "context": "Calling someone over politely."
+    },
+    {
+      "kannada": "ಅಲ್ಲಿ ಹೋಗಿ",
+      "transliteration": "Alli hogi",
+      "meaning": "Go there!",
+      "context": "Directing someone to a specific spot."
+    },
+    {
+      "kannada": "ಇಲ್ಲಿ ಬೇಕು!",
+      "transliteration": "Illi beku!",
+      "meaning": "I want it here!",
+      "context": "Combining Illi (Here) + Beku (Lesson 2)."
+    },
+    {
+      "kannada": "ನಮಸ್ಕಾರ, ಇಲ್ಲಿ ಬನ್ನಿ!",
+      "transliteration": "Namaskara, illi banni!",
+      "meaning": "Hello, come here!",
+      "context": "Combining Namaskara (Lesson 1) + Illi Banni (Lesson 3)."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q3-1",
+      "scenario": "You want your colleague or domestic worker to come over to your desk.",
+      "question": "What phrase do you use while beckoning gently?",
+      "options": ["Illi banni", "Alli hogi", "Auto beda"],
+      "answer": "Illi banni",
+      "explanation": "Illi (Here) + Banni (Come) = Illi banni!"
+    },
+    {
+      "id": "q3-2",
+      "scenario": "You want to tell a delivery agent to place the package right here.",
+      "question": "How do you say 'I want it here!'?",
+      "options": ["Illi beku!", "Alli hogi!", "Illa beda!"],
+      "answer": "Illi beku!",
+      "explanation": "Illi (Here) + Beku (Want) = Illi beku!"
+    },
+    {
+      "id": "q3-3",
+      "scenario": "You greet someone politely and invite them over.",
+      "question": "What is the combined phrase?",
+      "options": ["Namaskara, illi banni!", "Haudu, beku!", "Eshtu?"],
+      "answer": "Namaskara, illi banni!",
+      "explanation": "Namaskara (Hello) + Illi banni (Come here)."
+    }
+  ]
+}

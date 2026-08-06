@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import type { LessonData } from '../types';
 import { RotateCcw, Volume2, Sparkles, ArrowRight } from 'lucide-react';
 import { speakKannada } from '../services/speech';
@@ -8,19 +8,45 @@ interface SRSReviewProps {
   onBack: () => void;
 }
 
+/** Fisher-Yates on a copy — the deck mixes old and new lessons together. */
+function shuffle<T>(items: T[]): T[] {
+  const deck = [...items];
+  for (let i = deck.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [deck[i], deck[j]] = [deck[j], deck[i]];
+  }
+  return deck;
+}
+
 export const SRSReview: React.FC<SRSReviewProps> = ({ lessonsData, onBack }) => {
   // Aggregate all words across all available lessons
-  const allWords = lessonsData.flatMap((l) => l.words.map((w) => ({ ...w, lessonTitle: l.title })));
+  const allWords = useMemo(
+    () => lessonsData.flatMap((l) => l.words.map((w) => ({ ...w, lessonTitle: l.title }))),
+    [lessonsData]
+  );
   const allCombos = lessonsData.flatMap((l) => l.combos || []);
 
+  const [deck, setDeck] = useState<typeof allWords>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
 
-  const currentWord = allWords[currentIndex % allWords.length];
+  // Deal a fresh deck whenever the pool of lessons changes.
+  useEffect(() => {
+    setDeck(shuffle(allWords));
+    setCurrentIndex(0);
+  }, [allWords]);
+
+  const currentWord = deck[currentIndex];
 
   const handleNext = () => {
     setIsFlipped(false);
-    setCurrentIndex((prev) => (prev + 1) % allWords.length);
+    if (currentIndex + 1 >= deck.length) {
+      // Deck exhausted — reshuffle so the next pass comes in a new order.
+      setDeck(shuffle(allWords));
+      setCurrentIndex(0);
+    } else {
+      setCurrentIndex((prev) => prev + 1);
+    }
   };
 
   const handlePlayAudio = (e: React.MouseEvent) => {
@@ -53,7 +79,7 @@ export const SRSReview: React.FC<SRSReviewProps> = ({ lessonsData, onBack }) => 
           >
             {/* Top Indicator */}
             <div className="flex items-center justify-between text-xs text-slate-400 font-medium">
-              <span>Card {currentIndex + 1} of {allWords.length}</span>
+              <span>Card {currentIndex + 1} of {deck.length}</span>
               <span className="text-amber-400 font-semibold">{currentWord.lessonTitle}</span>
             </div>
 
@@ -63,7 +89,7 @@ export const SRSReview: React.FC<SRSReviewProps> = ({ lessonsData, onBack }) => 
                 <span className="text-xs uppercase tracking-widest text-amber-400 font-bold block">
                   CAN YOU RECALL THIS SOUND?
                 </span>
-                <h3 className="text-5xl font-extrabold text-white kannada-text tracking-wide">
+                <h3 lang="kn" className="text-5xl font-extrabold text-white kannada-text">
                   {currentWord.kannada}
                 </h3>
                 <p className="text-sm text-slate-400">Click or tap card to flip & reveal meaning</p>
@@ -120,7 +146,7 @@ export const SRSReview: React.FC<SRSReviewProps> = ({ lessonsData, onBack }) => 
 
         <button
           onClick={handleNext}
-          className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-emerald-500 text-slate-900 font-bold text-sm shadow-lg shadow-amber-500/20 hover:scale-105 transition-transform"
+          className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-amber-500 text-slate-900 font-bold text-sm hover:bg-amber-400 transition-colors"
         >
           <span>Next Flashcard</span>
           <ArrowRight className="w-4 h-4" />
@@ -138,7 +164,7 @@ export const SRSReview: React.FC<SRSReviewProps> = ({ lessonsData, onBack }) => 
             {allCombos.map((c, idx) => (
               <div key={idx} className="bg-slate-900/60 p-3.5 rounded-xl border border-slate-800 flex justify-between items-center">
                 <div>
-                  <span className="text-base font-bold text-amber-300 kannada-text mr-2">{c.kannada}</span>
+                  <span lang="kn" className="text-base font-bold text-amber-300 kannada-text mr-2">{c.kannada}</span>
                   <span className="text-xs text-slate-300 font-medium">({c.transliteration})</span>
                   <p className="text-xs text-emerald-400 font-semibold">{c.meaning}</p>
                 </div>

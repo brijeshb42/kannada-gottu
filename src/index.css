@@ -1,90 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Noto+Sans+Kannada:wght@400;600;700&display=swap');
+@import 'tailwindcss';
 
-:root {
-  --bg-main: #0f172a;
-  --bg-card: rgba(30, 41, 59, 0.7);
-  --bg-card-hover: rgba(30, 41, 59, 0.95);
-  --border-card: rgba(255, 255, 255, 0.1);
-  --accent-primary: #ef4444;
-  --accent-secondary: #f97316;
-  --accent-gold: #f59e0b;
-  --accent-emerald: #10b981;
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --kannada-font: 'Noto Sans Kannada', sans-serif;
-  --body-font: 'Outfit', sans-serif;
-  --radius-lg: 16px;
-  --radius-md: 12px;
-  --radius-sm: 8px;
+/*
+ * Design tokens. Components are written in Tailwind utilities; anything
+ * declared in @theme below becomes a utility too (e.g. `font-kannada`,
+ * `animate-fade-in`).
+ */
+@theme {
+  --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-kannada: 'Noto Sans Kannada', 'Outfit', sans-serif;
+
+  --animate-fade-in: fade-in 0.35s ease-out both;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@layer base {
+  body {
+    background:
+      radial-gradient(
+        60rem 40rem at 50% -12rem,
+        --alpha(var(--color-amber-500) / 10%),
+        transparent
+      ),
+      var(--color-slate-950);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
 }
 
-body {
-  font-family: var(--body-font);
-  background: radial-gradient(circle at top center, #1e1b4b 0%, #0f172a 60%, #020617 100%);
-  color: var(--text-main);
-  min-height: 100vh;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
+@layer components {
+  /* Card surface shared by lesson, word, combo and quiz cards. */
+  .glass-card {
+    background: --alpha(var(--color-slate-900) / 60%);
+    backdrop-filter: blur(12px);
+    border: 1px solid --alpha(var(--color-slate-700) / 50%);
+    border-radius: var(--radius-2xl);
+    transition:
+      border-color 0.2s ease,
+      background-color 0.2s ease;
+  }
+
+  .glass-card:hover {
+    border-color: --alpha(var(--color-slate-600) / 70%);
+  }
+
+  /* Kannada script needs more vertical room than the Latin body font. */
+  .kannada-text {
+    font-family: var(--font-kannada);
+    line-height: 1.5;
+  }
 }
 
-/* Glassmorphism utility */
-.glass-card {
-  background: var(--bg-card);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--border-card);
-  border-radius: var(--radius-lg);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.glass-card:hover {
-  border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 12px 40px 0 rgba(239, 68, 68, 0.15);
-}
-
-.kannada-text {
-  font-family: var(--kannada-font);
-  color: #fca5a5;
-  text-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
-}
-
-/* Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0f172a;
+  background: var(--color-slate-950);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #334155;
-  border-radius: 4px;
+  background: var(--color-slate-700);
+  border-radius: 999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #475569;
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.35s ease-out forwards;
+  background: var(--color-slate-600);
 }

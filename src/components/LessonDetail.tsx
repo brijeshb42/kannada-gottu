@@ -76,7 +76,7 @@ export const LessonDetail: React.FC<LessonDetailProps> = ({ lesson, onBack }) =>
             <span className="text-xs text-slate-400">Compounding words naturally</span>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {lesson.combos.map((combo, idx) => (
               <ComboCard key={idx} combo={combo} index={idx} />
             ))}
@@ -151,7 +151,7 @@ export const LessonDetail: React.FC<LessonDetailProps> = ({ lesson, onBack }) =>
           <div className="flex justify-end pt-2">
             <button
               onClick={() => setShowResults(!showResults)}
-              className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-emerald-500 text-slate-900 font-bold text-sm shadow-lg shadow-amber-500/20 hover:scale-105 transition-transform"
+              className="px-6 py-2.5 rounded-xl bg-amber-500 text-slate-900 font-bold text-sm hover:bg-amber-400 transition-colors"
             >
               {showResults ? 'Hide Results & Try Again' : 'Check Answers'}
             </button>

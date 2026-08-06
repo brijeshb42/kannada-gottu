@@ -48,13 +48,24 @@ Welcome! This document maintains persistent context for AI agents working on the
 
 ## 🚀 Cloudflare Deployment
 
-- **Custom Domain**: `kn.brijesh.cc` — attached to the Pages project in the
-  Cloudflare dashboard (Pages → kannada-gottu → Custom domains). Wrangler does
-  **not** manage the domain binding.
-- **Wrangler Config**: `wrangler.json` (Pages output directory: `./dist`).
-- **CI/CD Workflow**: `.github/workflows/deploy.yml` (supports `workflow_dispatch` manual trigger and push to `main`/`master`).
+- **Target**: **Cloudflare Workers static assets** — *not* Pages. `dist/` is
+  uploaded as the Worker's asset bundle; there is no Worker script (no `main`
+  in `wrangler.json`). Pages was abandoned because `wrangler pages deploy`
+  refuses to create a missing project in CI, while `wrangler deploy` creates
+  the Worker on first run.
+- **Custom Domain**: `kn.brijesh.cc` — declared in `wrangler.json` under
+  `routes` as a `custom_domain`, so Wrangler provisions the binding and its DNS
+  record on deploy. No dashboard step.
+- **Wrangler Config**: `wrangler.json` (`assets.directory: ./dist`).
+  `not_found_handling` is `"none"` on purpose: there is no client-side router,
+  and SPA mode would serve `index.html` + 200 for a missing lesson JSON, which
+  would break the `response.ok` check in `src/services/data.ts`.
+- **CI/CD Workflow**: `.github/workflows/deploy.yml` runs `wrangler deploy`
+  (supports `workflow_dispatch` manual trigger and push to `main`/`master`).
 - **Secrets Needed on GitHub**:
-  - `CLOUDFLARE_API_TOKEN`
+  - `CLOUDFLARE_API_TOKEN` — needs the **"Edit Cloudflare Workers"** template
+    (Workers Scripts edit + zone DNS/Workers Routes edit for the custom
+    domain). A Pages-scoped token is **not** sufficient.
   - `CLOUDFLARE_ACCOUNT_ID`
 
 ---

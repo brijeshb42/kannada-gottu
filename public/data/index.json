@@ -46,6 +46,17 @@
       "wordCount": 3,
       "words": ["Nillisi", "Kodi", "Swalpa"],
       "createdDate": "2026-08-06"
+    },
+    {
+      "id": "lesson-5",
+      "number": 5,
+      "title": "One, Two & Enough",
+      "stage": "Stage 2: Two-Word Combinations",
+      "topic": "Counting & Portion Control",
+      "description": "Ask for one or two items and signal when you have enough while reviewing polite requests and desire words.",
+      "wordCount": 3,
+      "words": ["Ondu", "Eradu", "Saaku"],
+      "createdDate": "2026-08-07"
     }
   ]
 }

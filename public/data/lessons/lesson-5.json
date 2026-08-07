@@ -1,0 +1,89 @@
+{
+  "id": "lesson-5",
+  "number": 5,
+  "title": "One, Two & Enough",
+  "stage": "Stage 2: Two-Word Combinations",
+  "topic": "Counting & Portion Control",
+  "intro": "Toddlers quickly learn to count the things they want and signal when they have enough. Today we add 3 practical quantity sounds for shops, ticket counters, and meals, then combine them with earlier lessons.",
+  "words": [
+    {
+      "id": "ondu",
+      "kannada": "ಒಂದು",
+      "transliteration": "Ondu",
+      "phonetic": "On-doo",
+      "english": "One",
+      "babyAnalogy": "Holding up one finger while choosing a single treat.",
+      "actionTag": "At a bakery or tea stall, hold up one finger and say 'Ondu kodi' (Give me one)."
+    },
+    {
+      "id": "eradu",
+      "kannada": "ಎರಡು",
+      "transliteration": "Eradu",
+      "phonetic": "Eh-rah-doo",
+      "english": "Two",
+      "babyAnalogy": "Holding up two fingers to ask for a pair of things.",
+      "actionTag": "When buying two tickets or two items, show two fingers and say 'Eradu beku' (I need two)."
+    },
+    {
+      "id": "saaku",
+      "kannada": "ಸಾಕು",
+      "transliteration": "Saaku",
+      "phonetic": "Saa-koo",
+      "english": "Enough / That's sufficient",
+      "babyAnalogy": "Covering the bowl with a hand when no more food is wanted.",
+      "actionTag": "When a server has given you enough food, raise your palm gently and say 'Saaku'."
+    }
+  ],
+  "combos": [
+    {
+      "kannada": "ಒಂದು ಕೊಡಿ",
+      "transliteration": "Ondu kodi",
+      "meaning": "Give me one, please.",
+      "context": "Combining Ondu (Lesson 5) + Kodi (Lesson 4) at a shop or food counter."
+    },
+    {
+      "kannada": "ಎರಡು ಬೇಕು",
+      "transliteration": "Eradu beku",
+      "meaning": "I need two.",
+      "context": "Combining Eradu (Lesson 5) + Beku (Lesson 2)."
+    },
+    {
+      "kannada": "ಸಾಕು, ಬೇಡ",
+      "transliteration": "Saaku, beda",
+      "meaning": "That's enough; I don't want more.",
+      "context": "Combining Saaku (Lesson 5) + Beda (Lesson 2) to stop another serving."
+    },
+    {
+      "kannada": "ಹೌದು, ಒಂದು ಕೊಡಿ",
+      "transliteration": "Haudu, ondu kodi",
+      "meaning": "Yes, give me one, please.",
+      "context": "Combining Haudu (Lesson 1) + Ondu (Lesson 5) + Kodi (Lesson 4)."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q5-1",
+      "scenario": "At a bakery, you point to a bun and want exactly one.",
+      "question": "What do you say while holding up one finger?",
+      "options": ["Ondu kodi", "Eradu beku", "Saaku, beda"],
+      "answer": "Ondu kodi",
+      "explanation": "Ondu (One) + Kodi (Give politely, Lesson 4) = Give me one, please."
+    },
+    {
+      "id": "q5-2",
+      "scenario": "At a ticket counter, you are buying for yourself and a friend.",
+      "question": "How do you say that you need two?",
+      "options": ["Swalpa kodi", "Eradu beku", "Ondu kodi"],
+      "answer": "Eradu beku",
+      "explanation": "Eradu (Two) + Beku (Need, Lesson 2) = I need two."
+    },
+    {
+      "id": "q5-3",
+      "scenario": "A server keeps adding rice to your plate, but you already have enough.",
+      "question": "What phrase politely signals that you want no more?",
+      "options": ["Haudu, ondu kodi", "Illi nillisi", "Saaku, beda"],
+      "answer": "Saaku, beda",
+      "explanation": "Saaku (Enough) + Beda (Don't want, Lesson 2) = That's enough; I don't want more."
+    }
+  ]
+}

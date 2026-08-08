@@ -1,0 +1,89 @@
+{
+  "id": "lesson-6",
+  "number": 6,
+  "title": "Today, Tomorrow & Now",
+  "stage": "Stage 3: Everyday Sentences",
+  "topic": "Time Signals & Scheduling",
+  "intro": "Children first understand time through what is happening now, what belongs to today, and what comes after one sleep. Today we add 3 everyday time signals and use them in longer phrases for colleagues, deliveries, and domestic help.",
+  "words": [
+    {
+      "id": "eega",
+      "kannada": "ಈಗ",
+      "transliteration": "Eega",
+      "phonetic": "Ee-gah",
+      "english": "Now",
+      "babyAnalogy": "Pointing firmly at the floor to mean this exact moment.",
+      "actionTag": "When a delivery agent calls from the gate and should come immediately, say 'Eega illi banni' (Come here now)."
+    },
+    {
+      "id": "ivattu",
+      "kannada": "ಇವತ್ತು",
+      "transliteration": "Ivattu",
+      "phonetic": "Ee-vut-too",
+      "english": "Today",
+      "babyAnalogy": "Tapping today's square on a calendar or pointing down at the current day.",
+      "actionTag": "When discussing a task with a colleague or domestic worker, tap today's date and say 'Ivattu'."
+    },
+    {
+      "id": "naale",
+      "kannada": "ನಾಳೆ",
+      "transliteration": "Naale",
+      "phonetic": "Naa-lay",
+      "english": "Tomorrow",
+      "babyAnalogy": "Resting the head on folded hands, then pointing forward to after one sleep.",
+      "actionTag": "When arranging the next visit with domestic help or a technician, say 'Naale banni' (Come tomorrow)."
+    }
+  ],
+  "combos": [
+    {
+      "kannada": "ಈಗ ಇಲ್ಲಿ ಬನ್ನಿ",
+      "transliteration": "Eega illi banni",
+      "meaning": "Come here now, please.",
+      "context": "Combining Eega (Lesson 6) + Illi Banni (Lesson 3)."
+    },
+    {
+      "kannada": "ಇವತ್ತು ಬೇಡ, ನಾಳೆ ಬನ್ನಿ",
+      "transliteration": "Ivattu beda, naale banni",
+      "meaning": "Not today; come tomorrow, please.",
+      "context": "Combining Ivattu and Naale (Lesson 6) + Beda (Lesson 2) + Banni (Lesson 3)."
+    },
+    {
+      "kannada": "ನಾಳೆ ಎರಡು ಬೇಕು",
+      "transliteration": "Naale eradu beku",
+      "meaning": "I need two tomorrow.",
+      "context": "Combining Naale (Lesson 6) + Eradu (Lesson 5) + Beku (Lesson 2)."
+    },
+    {
+      "kannada": "ಹೌದು, ಈಗ ಬೇಕು",
+      "transliteration": "Haudu, eega beku",
+      "meaning": "Yes, I need it now.",
+      "context": "Combining Haudu (Lesson 1) + Eega (Lesson 6) + Beku (Lesson 2)."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q6-1",
+      "scenario": "A delivery agent is waiting at the gate, and you want them to come to your location immediately.",
+      "question": "What longer phrase do you use?",
+      "options": ["Eega illi banni", "Naale eradu beku", "Ivattu beda, naale banni"],
+      "answer": "Eega illi banni",
+      "explanation": "Eega (Now) + Illi (Here, Lesson 3) + Banni (Come politely, Lesson 3) = Come here now, please."
+    },
+    {
+      "id": "q6-2",
+      "scenario": "A technician offers to visit today, but tomorrow suits you better.",
+      "question": "How do you ask them not to come today but to come tomorrow?",
+      "options": ["Haudu, eega beku", "Ivattu beda, naale banni", "Saaku, beda"],
+      "answer": "Ivattu beda, naale banni",
+      "explanation": "Ivattu (Today) + Beda (Not wanted, Lesson 2) + Naale (Tomorrow) + Banni (Come politely, Lesson 3)."
+    },
+    {
+      "id": "q6-3",
+      "scenario": "A colleague asks whether you need the requested item immediately, and you do.",
+      "question": "What phrase confirms that you need it now?",
+      "options": ["Naale eradu beku", "Illa, beda", "Haudu, eega beku"],
+      "answer": "Haudu, eega beku",
+      "explanation": "Haudu (Yes, Lesson 1) + Eega (Now) + Beku (Need, Lesson 2) = Yes, I need it now."
+    }
+  ]
+}

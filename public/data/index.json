@@ -57,6 +57,17 @@
       "wordCount": 3,
       "words": ["Ondu", "Eradu", "Saaku"],
       "createdDate": "2026-08-07"
+    },
+    {
+      "id": "lesson-6",
+      "number": 6,
+      "title": "Today, Tomorrow & Now",
+      "stage": "Stage 3: Everyday Sentences",
+      "topic": "Time Signals & Scheduling",
+      "description": "Schedule visits and express when something is needed using longer everyday phrases with now, today, and tomorrow.",
+      "wordCount": 3,
+      "words": ["Eega", "Ivattu", "Naale"],
+      "createdDate": "2026-08-08"
     }
   ]
 }

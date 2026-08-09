@@ -68,6 +68,17 @@
       "wordCount": 3,
       "words": ["Eega", "Ivattu", "Naale"],
       "createdDate": "2026-08-08"
+    },
+    {
+      "id": "lesson-7",
+      "number": 7,
+      "title": "Say It Again, Slowly",
+      "stage": "Stage 3: Everyday Sentences",
+      "topic": "Clarifying Speech & Repeating Requests",
+      "description": "Ask people to repeat themselves or speak slowly, and request one more item using polite everyday sentences.",
+      "wordCount": 3,
+      "words": ["Matte", "Nidhaanavaagi", "Heli"],
+      "createdDate": "2026-08-09"
     }
   ]
 }

@@ -1,0 +1,89 @@
+{
+  "id": "lesson-7",
+  "number": 7,
+  "title": "Say It Again, Slowly",
+  "stage": "Stage 3: Everyday Sentences",
+  "topic": "Clarifying Speech & Repeating Requests",
+  "intro": "Children keep conversations going by asking adults to repeat sounds and slow them down. Today we add 3 practical listening-repair words so you can stay in a Kannada conversation instead of switching immediately to English.",
+  "words": [
+    {
+      "id": "matte",
+      "kannada": "ಮತ್ತೆ",
+      "transliteration": "Matte",
+      "phonetic": "Mut-tay",
+      "english": "Again / One more",
+      "babyAnalogy": "Making a small circle with one finger to ask for the song or game again.",
+      "actionTag": "When you miss what a colleague or shopkeeper said, make a gentle repeat gesture and say 'Matte'."
+    },
+    {
+      "id": "nidhaanavaagi",
+      "kannada": "ನಿಧಾನವಾಗಿ",
+      "transliteration": "Nidhaanavaagi",
+      "phonetic": "Nee-dhaa-nah-vaa-gee",
+      "english": "Slowly",
+      "babyAnalogy": "Moving a flat hand forward very slowly like a crawling turtle.",
+      "actionTag": "When someone speaks Kannada too quickly, move your hand slowly and say 'Nidhaanavaagi'."
+    },
+    {
+      "id": "heli",
+      "kannada": "ಹೇಳಿ",
+      "transliteration": "Heli",
+      "phonetic": "Hay-lee",
+      "english": "Say / Tell (Polite / Respectful)",
+      "babyAnalogy": "Cupping a hand behind the ear to invite someone to use their words.",
+      "actionTag": "Ask a colleague to tell you a Kannada word or repeat a direction by saying 'Heli' politely."
+    }
+  ],
+  "combos": [
+    {
+      "kannada": "ಮತ್ತೆ ಹೇಳಿ",
+      "transliteration": "Matte heli",
+      "meaning": "Say it again, please.",
+      "context": "Combining Matte + Heli from Lesson 7 when you miss a phrase."
+    },
+    {
+      "kannada": "ಸ್ವಲ್ಪ ನಿಧಾನವಾಗಿ ಹೇಳಿ",
+      "transliteration": "Swalpa nidhaanavaagi heli",
+      "meaning": "Please speak a little slowly.",
+      "context": "Combining Swalpa (Lesson 4) + Nidhaanavaagi and Heli (Lesson 7)."
+    },
+    {
+      "kannada": "ಮತ್ತೆ ಒಂದು ಕೊಡಿ",
+      "transliteration": "Matte ondu kodi",
+      "meaning": "Give me one more, please.",
+      "context": "Combining Matte (Lesson 7) + Ondu (Lesson 5) + Kodi (Lesson 4)."
+    },
+    {
+      "kannada": "ಇಲ್ಲ, ಮತ್ತೆ ಹೇಳಿ",
+      "transliteration": "Illa, matte heli",
+      "meaning": "No, say it again, please.",
+      "context": "Combining Illa (Lesson 1) + Matte Heli (Lesson 7) when asked if you understood."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q7-1",
+      "scenario": "A shopkeeper gives you the price in Kannada, but you do not catch it the first time.",
+      "question": "How do you politely ask them to repeat it?",
+      "options": ["Matte heli", "Eega illi banni", "Eradu beku"],
+      "answer": "Matte heli",
+      "explanation": "Matte (Again) + Heli (Say politely) = Say it again, please."
+    },
+    {
+      "id": "q7-2",
+      "scenario": "Your auto driver is explaining something in Kannada much too quickly for you.",
+      "question": "What longer phrase asks them to speak a little slowly?",
+      "options": ["Matte ondu kodi", "Swalpa nidhaanavaagi heli", "Ivattu beda, naale banni"],
+      "answer": "Swalpa nidhaanavaagi heli",
+      "explanation": "Swalpa (A little, Lesson 4) + Nidhaanavaagi (Slowly) + Heli (Say politely) = Please speak a little slowly."
+    },
+    {
+      "id": "q7-3",
+      "scenario": "You enjoyed one idli and want the server to bring one more.",
+      "question": "What phrase do you use while raising one finger?",
+      "options": ["Saaku, beda", "Matte ondu kodi", "Haudu, eega beku"],
+      "answer": "Matte ondu kodi",
+      "explanation": "Matte (One more) + Ondu (One, Lesson 5) + Kodi (Give politely, Lesson 4) = Give me one more, please."
+    }
+  ]
+}

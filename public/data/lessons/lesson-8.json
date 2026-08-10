@@ -1,0 +1,89 @@
+{
+  "id": "lesson-8",
+  "number": 8,
+  "title": "Ahead, Back & Nearby",
+  "stage": "Stage 3: Everyday Sentences",
+  "topic": "Fine-Tuning Everyday Directions",
+  "intro": "Children sharpen their sense of space by pointing just ahead, looking back, and pulling trusted adults closer. Today we add 3 practical location words for fine-tuning directions with auto drivers, delivery agents, and visitors.",
+  "words": [
+    {
+      "id": "munde",
+      "kannada": "ಮುಂದೆ",
+      "transliteration": "Munde",
+      "phonetic": "Mun-day",
+      "english": "Ahead / In front",
+      "babyAnalogy": "Stretching one arm forward to point a little farther along the path.",
+      "actionTag": "When your auto should continue past the current spot, point forward and say 'Swalpa munde' (A little ahead)."
+    },
+    {
+      "id": "hinde",
+      "kannada": "ಹಿಂದೆ",
+      "transliteration": "Hinde",
+      "phonetic": "Hin-day",
+      "english": "Behind / Back",
+      "babyAnalogy": "Turning the head and pointing over one shoulder at what was passed.",
+      "actionTag": "When a visitor walks past the correct door, point back and say 'Hinde hogi' (Go back)."
+    },
+    {
+      "id": "hattira",
+      "kannada": "ಹತ್ತಿರ",
+      "transliteration": "Hattira",
+      "phonetic": "Hut-tee-rah",
+      "english": "Near / Close",
+      "babyAnalogy": "Pulling both hands inward to bring someone or something closer.",
+      "actionTag": "When a delivery agent is standing too far away, beckon gently and say 'Hattira banni' (Come closer)."
+    }
+  ],
+  "combos": [
+    {
+      "kannada": "ಸ್ವಲ್ಪ ಮುಂದೆ ನಿಲ್ಲಿಸಿ",
+      "transliteration": "Swalpa munde nillisi",
+      "meaning": "Stop a little ahead, please.",
+      "context": "Combining Swalpa and Nillisi (Lesson 4) + Munde (Lesson 8) for an auto ride."
+    },
+    {
+      "kannada": "ಹಿಂದೆ ಹೋಗಿ",
+      "transliteration": "Hinde hogi",
+      "meaning": "Go back, please.",
+      "context": "Combining Hinde (Lesson 8) + Hogi (Lesson 3)."
+    },
+    {
+      "kannada": "ಹತ್ತಿರ ಬನ್ನಿ",
+      "transliteration": "Hattira banni",
+      "meaning": "Come closer, please.",
+      "context": "Combining Hattira (Lesson 8) + Banni (Lesson 3)."
+    },
+    {
+      "kannada": "ಹೌದು, ಇಲ್ಲಿ ಹತ್ತಿರ ನಿಲ್ಲಿಸಿ",
+      "transliteration": "Haudu, illi hattira nillisi",
+      "meaning": "Yes, stop near here, please.",
+      "context": "Combining Haudu (Lesson 1) + Illi (Lesson 3) + Nillisi (Lesson 4) + Hattira (Lesson 8)."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q8-1",
+      "scenario": "Your auto is almost at your gate, but the driver starts stopping a few metres too early.",
+      "question": "What phrase asks the driver to stop a little ahead?",
+      "options": ["Swalpa munde nillisi", "Hinde hogi", "Hattira banni"],
+      "answer": "Swalpa munde nillisi",
+      "explanation": "Swalpa (A little, Lesson 4) + Munde (Ahead) + Nillisi (Stop politely, Lesson 4) = Stop a little ahead, please."
+    },
+    {
+      "id": "q8-2",
+      "scenario": "A technician walks past your apartment door and needs to retrace a few steps.",
+      "question": "How do you politely direct them back?",
+      "options": ["Eega illi banni", "Hinde hogi", "Matte heli"],
+      "answer": "Hinde hogi",
+      "explanation": "Hinde (Back) + Hogi (Go politely, Lesson 3) = Go back, please."
+    },
+    {
+      "id": "q8-3",
+      "scenario": "A delivery agent is at the far end of the lobby, and you want them to approach you.",
+      "question": "What do you say while beckoning gently?",
+      "options": ["Hattira banni", "Saaku, beda", "Naale eradu beku"],
+      "answer": "Hattira banni",
+      "explanation": "Hattira (Near / Close) + Banni (Come politely, Lesson 3) = Come closer, please."
+    }
+  ]
+}

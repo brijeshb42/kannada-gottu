@@ -79,6 +79,17 @@
       "wordCount": 3,
       "words": ["Matte", "Nidhaanavaagi", "Heli"],
       "createdDate": "2026-08-09"
+    },
+    {
+      "id": "lesson-8",
+      "number": 8,
+      "title": "Ahead, Back & Nearby",
+      "stage": "Stage 3: Everyday Sentences",
+      "topic": "Fine-Tuning Everyday Directions",
+      "description": "Fine-tune directions with ahead, back, and near in polite everyday sentences for rides, deliveries, and visitors.",
+      "wordCount": 3,
+      "words": ["Munde", "Hinde", "Hattira"],
+      "createdDate": "2026-08-10"
     }
   ]
 }

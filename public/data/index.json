@@ -90,6 +90,17 @@
       "wordCount": 3,
       "words": ["Munde", "Hinde", "Hattira"],
       "createdDate": "2026-08-10"
+    },
+    {
+      "id": "lesson-9",
+      "number": 9,
+      "title": "Water, Meals & Praise",
+      "stage": "Stage 3: Everyday Sentences",
+      "topic": "Food, Drink & Hospitality",
+      "description": "Request water or a meal and warmly praise good food using practical everyday sentences.",
+      "wordCount": 3,
+      "words": ["Neeru", "Oota", "Chennagide"],
+      "createdDate": "2026-08-11"
     }
   ]
 }

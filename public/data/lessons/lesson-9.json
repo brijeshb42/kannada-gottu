@@ -1,0 +1,89 @@
+{
+  "id": "lesson-9",
+  "number": 9,
+  "title": "Water, Meals & Praise",
+  "stage": "Stage 3: Everyday Sentences",
+  "topic": "Food, Drink & Hospitality",
+  "intro": "Children connect food and drink with immediate needs, then learn to show delight after tasting something good. Today we add 3 warm, practical words for requesting water or a meal and praising what someone serves.",
+  "words": [
+    {
+      "id": "neeru",
+      "kannada": "ನೀರು",
+      "transliteration": "Neeru",
+      "phonetic": "Nee-roo",
+      "english": "Water",
+      "babyAnalogy": "Lifting an imaginary cup to the mouth when feeling thirsty.",
+      "actionTag": "At home, work, or a restaurant, point to your glass and say 'Swalpa neeru kodi' (Give me a little water)."
+    },
+    {
+      "id": "oota",
+      "kannada": "ಊಟ",
+      "transliteration": "Oota",
+      "phonetic": "Oo-tah",
+      "english": "Meal / Food",
+      "babyAnalogy": "Rubbing the tummy and bringing an imaginary spoon toward the mouth.",
+      "actionTag": "When someone asks whether you are ready for lunch or dinner, say 'Oota beku' (I want a meal)."
+    },
+    {
+      "id": "chennagide",
+      "kannada": "ಚೆನ್ನಾಗಿದೆ",
+      "transliteration": "Chennagide",
+      "phonetic": "Chen-naa-gee-day",
+      "english": "It is good / It is nice",
+      "babyAnalogy": "Smiling broadly and giving a thumbs-up after a tasty bite.",
+      "actionTag": "After tasting food made by a host, cook, or colleague, smile and say 'Chennagide'."
+    }
+  ],
+  "combos": [
+    {
+      "kannada": "ಸ್ವಲ್ಪ ನೀರು ಕೊಡಿ",
+      "transliteration": "Swalpa neeru kodi",
+      "meaning": "Give me a little water, please.",
+      "context": "Combining Swalpa and Kodi (Lesson 4) + Neeru (Lesson 9)."
+    },
+    {
+      "kannada": "ಊಟ ಬೇಕು",
+      "transliteration": "Oota beku",
+      "meaning": "I want a meal / food.",
+      "context": "Combining Oota (Lesson 9) + Beku (Lesson 2)."
+    },
+    {
+      "kannada": "ಊಟ ಚೆನ್ನಾಗಿದೆ",
+      "transliteration": "Oota chennagide",
+      "meaning": "The food is good.",
+      "context": "Combining Oota + Chennagide from Lesson 9 to praise a meal."
+    },
+    {
+      "kannada": "ಹೌದು, ಊಟ ಚೆನ್ನಾಗಿದೆ",
+      "transliteration": "Haudu, oota chennagide",
+      "meaning": "Yes, the food is good.",
+      "context": "Combining Haudu (Lesson 1) + Oota Chennagide (Lesson 9)."
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q9-1",
+      "scenario": "Your water glass is empty during lunch, and you want a small refill.",
+      "question": "What polite phrase do you use while pointing to the glass?",
+      "options": ["Swalpa neeru kodi", "Oota beku", "Saaku, beda"],
+      "answer": "Swalpa neeru kodi",
+      "explanation": "Swalpa (A little, Lesson 4) + Neeru (Water) + Kodi (Give politely, Lesson 4) = Give me a little water, please."
+    },
+    {
+      "id": "q9-2",
+      "scenario": "Your family asks whether you are ready to eat dinner, and you are hungry.",
+      "question": "How do you say that you want a meal?",
+      "options": ["Neeru beda", "Oota beku", "Matte heli"],
+      "answer": "Oota beku",
+      "explanation": "Oota (Meal / Food) + Beku (Want, Lesson 2) = I want a meal."
+    },
+    {
+      "id": "q9-3",
+      "scenario": "A colleague shares homemade food and asks whether you like it. You do.",
+      "question": "What complete phrase warmly praises the food?",
+      "options": ["Haudu, oota chennagide", "Illa, oota beda", "Swalpa munde nillisi"],
+      "answer": "Haudu, oota chennagide",
+      "explanation": "Haudu (Yes, Lesson 1) + Oota (Food) + Chennagide (It is good) = Yes, the food is good."
+    }
+  ]
+}
